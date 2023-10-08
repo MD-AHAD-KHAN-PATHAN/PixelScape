@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "picture": "https://i.ibb.co/PMnPLHL/img2.jpg",
+        "title": "Tournament Organization and Management",
+        "description": "Expertly manage gaming tournaments, from bracket creation to prize distribution.",
+        "details": "This service involves planning, organizing, and managing gaming tournaments within the event. It includes setting up brackets, enforcing rules, providing referees, and ensuring fair competition. Tournament management also includes prize distribution and post-event reporting.",
+        "price": 2000
+    },
+    {
+        "id": 2,
+        "picture": "https://i.ibb.co/gzXncqf/event-venue-management.jpg",
+        "title": "Event Venue Management",
+        "description": "Seamlessly handle venue logistics for a safe and enjoyable gaming experience.",
+        "details": "Venue management includes selecting an appropriate location, configuring it to accommodate gamers, spectators, and equipment, and overseeing logistics such as security, parking, and crowd control. Ensuring a comfortable and safe environment is paramount.",
+        "price": 3000
+    },
+    {
+        "id": 3,
+        "picture": "https://i.ibb.co/nC3DPy9/img3.jpg",
+        "title": "Live Streaming and Broadcasting",
+        "description": "Stream gaming action live for worldwide viewership with professional production.",
+        "details": "Live streaming and broadcasting services make it possible to broadcast gaming events to a global audience in real-time. This service involves setting up cameras, commentary teams, and technical infrastructure to deliver high-quality live streams on platforms like Twitch or YouTube.",
+        "price": 4000
+    },
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/Kb3GTRt/Food.png",
+        "title": "Technical Support and IT Services",
+        "description": "Keep the gaming experience smooth with on-site IT and technical support.",
+        "details": "Technical support teams are responsible for maintaining the stability and performance of the network infrastructure, gaming hardware, and software. They handle troubleshooting and ensure minimal downtime during the event.",
+        "price": 5000
+    },
+    
+    {
+        "id": 5,
+        "picture": "https://i.ibb.co/yNwc1TD/Education.png",
+        "title": "Esports Team Management",
+        "description": "Support esports teams with recruitment, coaching, and logistics.",
+        "details": "Esports team management services cater to professional gaming teams participating in the event. It includes tasks like recruitment, coaching, player development, travel logistics, and sponsorships to maximize team performance.",
+        "price": 4500
+    },
+    {
+        "id": 6,
+        "picture": "https://i.ibb.co/HzRjmdg/Health.png",
+        "title": "Gaming Hardware and Accessories",
+        "description": "Discover and buy the latest gaming gear and accessories.",
+        "details": "Vendors offer a wide range of gaming hardware, peripherals, and accessories for purchase. This service allows attendees to explore and buy the latest gaming gear, from high-performance gaming PCs to customized controllers.",
+        "price": 3500
+    },
+    {
+        "id": 7,
+        "picture": "https://i.ibb.co/Kb3GTRt/Food.png",
+        "title": "Cosplay Services",
+        "description": "Dive into the world of gaming cosplay with contests and workshops.",
+        "details": "Cosplay services at gaming events encompass costume contests, workshops, and resources for attendees interested in dressing up as their favorite gaming characters. Professional cosplayers may also be invited to participate and interact with fans.",
+        "price": 5000
+    },
+    {
+        "id": 8,
+        "picture": "https://i.ibb.co/1XN4mMr/Clothing.png",
+        "title": "Game Developers and Publishers",
+        "description": "Get a sneak peek at upcoming games and meet the developers.",
+        "details": "Game developers and publishers showcase their latest titles, offer hands-on demos, and engage with the gaming community to gather feedback and build anticipation for upcoming releases. This service often includes Q&A sessions and exclusive previews.",
+        "price": 2000
+    },
+    {
+        "id": 9,
+        "picture": "https://i.ibb.co/Kb3GTRt/Food.png",
+        "title": "Gaming Merchandise and Collectibles",
+        "description": "Shop for gaming merchandise and collectibles to remember the event.",
+        "details": "Vendors at gaming events sell a wide array of gaming-related merchandise, collectibles, and memorabilia. Attendees can purchase souvenirs, limited-edition items, and unique collectibles to commemorate the event.",
+        "price": 3000
+    },
+    {
+        "id": 10,
+        "picture": "https://i.ibb.co/yNwc1TD/Education.png",
+        "title": "Panel Discussions and Workshops",
+        "description": "Attend engaging panel discussions and workshops on gaming topics.",
+        "details": "Gaming events often host panel discussions, workshops, and seminars featuring industry experts, influencers, and game developers. These sessions cover a variety of topics, including game design, industry trends, and the esports scene, providing educational and interactive opportunities for attendees.",
+        "price": 2500
+    }
+]
