@@ -6,13 +6,13 @@ const Navbar = () => {
 
     const {user, logOut} = UseHooks();
 
-    console.log(user);
-
     const navLink = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/aboutUs'>About Us</NavLink></li>
-        <li><NavLink to='/gallery'>Gallery</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
+        <li><NavLink to='/terms'>Terms & Condition</NavLink></li>
+        {
+            user && <li><NavLink to='/customService'>custom service</NavLink></li>
+        }
     </>
 
     return (
@@ -43,14 +43,13 @@ const Navbar = () => {
                                     <img src={user.photoURL} />
                                 </div>
                             </label>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box w-52">
+                            <ul tabIndex={0} className="menu dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box w-52">
                                 <li>
                                     <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
 
                                 </li>
                                 <li>
-                                    <button onClick={logOut} className="btn btn-sm  btn-ghost">Logout</button>
-
+                                    <Link to='/'><button onClick={logOut} className="btn btn-sm  btn-ghost">Logout</button></Link>
                                 </li>
                             </ul>
                         </div>

@@ -7,6 +7,8 @@ import Registration from "../Pages/Registration/Registration";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import CustomService from "../Pages/CustomService/CustomService";
+import Terms from "../Pages/Terms&Condition/Terms";
 
 const Route = createBrowserRouter([
     {
@@ -33,8 +35,16 @@ const Route = createBrowserRouter([
                 loader: () => fetch('/data.json')
             },
             {
-                path: 'aboutUs',
+                path: '/aboutUs',
                 element: <AboutUs></AboutUs>
+            },
+            {
+                path: '/terms',
+                element: <Terms></Terms>
+            },
+            {
+                path: '/customService',
+                element: <CustomService></CustomService>
             }
         ]
     }

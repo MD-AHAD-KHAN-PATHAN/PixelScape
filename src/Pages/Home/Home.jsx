@@ -20,6 +20,30 @@ const Home = () => {
             <div className="mx-20">
                 <Gallary></Gallary>
             </div>
+
+            <div className="m-20">
+                <h1 className="text-center mb-10 font-bold text-5xl text-black">Our <span className="text-gray-500">Sponsor</span></h1>
+                <div className="grid grid-cols-4 justify-around">
+
+                    <div>
+                        <img className="w-52" src="https://i.ibb.co/cg9rhgJ/th.jpg" alt="" />
+                        <p className="text-lg font-bold mt-4">Merchandise Sponsorship</p>
+                    </div>
+                    <div>
+                        <img className="w-40" src="https://i.ibb.co/S00ynLX/capcom.jpg" alt="" />
+                        <p className="text-lg font-bold mt-4">Streaming Sponsorship</p>
+                    </div>
+                    <div>
+                        <img className="w-40" src="https://i.ibb.co/rk3WCXH/xboxpng.png" alt="" />
+                        <p className="text-lg font-bold mt-4">Title Sponsorship</p>
+                    </div>
+                    <div>
+                        <img className="w-24" src="https://i.ibb.co/XScwK03/OIP.jpg" alt="" />
+                        <p className="text-lg font-bold mt-4">Food and Beverage Sponsorship</p>
+                    </div>
+                </div>
+            </div>
+
         </>
 
     );

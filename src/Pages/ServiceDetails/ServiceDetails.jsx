@@ -9,7 +9,7 @@ const ServiceDetails = () => {
     const items = useLoaderData() || [];
 
     return (
-        <div>
+        <div className="my-20">
             {
                 items?.map(item => item.id === intId && <Details key={item.id} item={item}></Details>)
             }
