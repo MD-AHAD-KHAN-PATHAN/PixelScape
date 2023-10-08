@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Registration = () => {
 
-    const { createUser, handleUpdateProfile } = UseHooks();
+    const { createUser, profileUpdate } = UseHooks();
     const navigate = useNavigate();
 
     const handleRegistration = e => {
@@ -24,7 +24,7 @@ const Registration = () => {
 
         createUser(email, password)
             .then(() => {
-                handleUpdateProfile(name, url)
+                profileUpdate(name, url)
                     .then(() => {
                         toast.success('Registation Successfully');
                     })

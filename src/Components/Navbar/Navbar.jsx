@@ -1,7 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
+import UseHooks from "../Hooks/UseHooks";
 
 
 const Navbar = () => {
+
+    const {user, logOut} = UseHooks();
+
+    console.log(user);
 
     const navLink = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -10,10 +15,8 @@ const Navbar = () => {
         <li><NavLink to='/contact'>Contact</NavLink></li>
     </>
 
-    const user = false;
-
     return (
-        <div>
+        <div className="">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -37,16 +40,16 @@ const Navbar = () => {
                         user ? <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img src="https://i.ibb.co/7j1J3Wm/ahad-khan-white.png" />
+                                    <img src={user.photoURL} />
                                 </div>
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box w-52">
                                 <li>
-                                    <button className="btn btn-sm  btn-ghost">Ahad Khan</button>
+                                    <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
 
                                 </li>
                                 <li>
-                                    <button className="btn btn-sm  btn-ghost">Logout</button>
+                                    <button onClick={logOut} className="btn btn-sm  btn-ghost">Logout</button>
 
                                 </li>
                             </ul>
