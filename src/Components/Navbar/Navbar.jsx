@@ -17,6 +17,7 @@ const Navbar = () => {
             user && <>
                 <li><NavLink to='/venue'>Venu</NavLink></li>
                 <li><NavLink to='/customService'>Custom Service</NavLink></li>
+                <li><NavLink to='/upcomingEvent'>Upcoming Event</NavLink></li>
             </>
         }
     </>
