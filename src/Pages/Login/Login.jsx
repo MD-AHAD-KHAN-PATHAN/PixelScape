@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import UseHooks from '../../Components/Hooks/UseHooks';
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,6 +8,11 @@ const Login = () => {
 
     const { userLogin } = UseHooks();
 
+    const navigate = useNavigate();
+
+    function slow(){
+        navigate('/');
+    }
 
     const handleLogin = e => {
         e.preventDefault();
@@ -18,6 +23,7 @@ const Login = () => {
         userLogin(email, password)
             .then(() => {
                 toast.success('User login Successfull');
+                setTimeout(slow, 1000);
             })
             .catch((error) => {
                 toast.error(error.code);
@@ -41,14 +47,14 @@ const Login = () => {
                                     <label className="label">
                                         <span className="label-text">Email</span>
                                     </label>
-                                    <input type="email" name='email' placeholder="email" className="input input-bordered" />
+                                    <input type="email" name='email' placeholder="email" className="input input-bordered" required/>
                                 </div>
 
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Password</span>
                                     </label>
-                                    <input type="password" name='password' placeholder="password" className="input input-bordered" />
+                                    <input type="password" name='password' placeholder="password" className="input input-bordered" required/>
                                 </div>
                                 <div className="form-control mt-6 p-0">
                                     <button className="btn btn-neutral">Login</button>

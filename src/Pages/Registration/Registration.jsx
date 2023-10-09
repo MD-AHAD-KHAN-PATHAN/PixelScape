@@ -9,6 +9,10 @@ const Registration = () => {
     const { createUser, profileUpdate } = UseHooks();
     const navigate = useNavigate();
 
+    function slow(){
+        navigate('/');
+    }
+    
     const handleRegistration = e => {
         e.preventDefault();
 
@@ -17,9 +21,16 @@ const Registration = () => {
         const url = e.target.url.value;
         const password = e.target.password.value;
 
-        if (password.length < 6 || !/[A-Z]/.test(password) || !/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)) {
-            
-            return toast.error('Invalid password. Please check the requirements.');
+        if (password.length < 6) {
+            return toast.error('Password must be at least 6 characters long.');
+        }
+
+        if (!/[A-Z]/.test(password)) {
+            return toast.error('Password must contain at least one uppercase letter.');
+        }
+
+        if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)) {
+            return toast.error('Password must contain at least one special character.');
         }
 
         createUser(email, password)
@@ -27,11 +38,12 @@ const Registration = () => {
                 profileUpdate(name, url)
                     .then(() => {
                         toast.success('Registation Successfully');
+                        setTimeout(slow, 1000);
                     })
-                    .catch(error => console.log(error.message))
+                    .catch(error => toast.error(error.code))
             })
             .catch(error => {
-                toast.error(error.message);
+                toast.error(error.code);
             })
 
 
@@ -51,25 +63,25 @@ const Registration = () => {
                                     <label className="label">
                                         <span className="label-text">Full Name</span>
                                     </label>
-                                    <input type="name" name="name" placeholder="Full name" className="input input-bordered" />
+                                    <input type="name" name="name" placeholder="Full name" className="input input-bordered" required />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Email</span>
                                     </label>
-                                    <input type="email" name="email" placeholder="email" className="input input-bordered" />
+                                    <input type="email" name="email" placeholder="email" className="input input-bordered" required/>
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Image Url</span>
                                     </label>
-                                    <input type="text" name="url" placeholder="image url" className="input input-bordered" />
+                                    <input type="text" name="url" placeholder="image url" className="input input-bordered" required/>
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Password</span>
                                     </label>
-                                    <input type="password" name="password" placeholder="password" className="input input-bordered" />
+                                    <input type="password" name="password" placeholder="password" className="input input-bordered" required/>
                                 </div>
                                 <div className="form-control mt-6 p-0">
                                     <button className="btn btn-neutral">Register</button>
