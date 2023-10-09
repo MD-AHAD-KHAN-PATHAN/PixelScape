@@ -46,7 +46,7 @@ const Route = createBrowserRouter([
             },
             {
                 path: '/customService',
-                element: <CustomService></CustomService>
+                element: <PrivateRoute><CustomService></CustomService></PrivateRoute>
             },
             {
                 path: '/venue',
@@ -55,7 +55,7 @@ const Route = createBrowserRouter([
             },
             {
                 path: '/upcomingEvent',
-                element: <UpcomingEvent></UpcomingEvent>
+                element: <PrivateRoute><UpcomingEvent></UpcomingEvent></PrivateRoute>
             }
         ]
     }
