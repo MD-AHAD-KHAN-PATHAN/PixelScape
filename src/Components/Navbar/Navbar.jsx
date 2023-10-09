@@ -16,9 +16,9 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="">
+        <div>
             <div className="navbar bg-base-100">
-                <div className="navbar-start">
+                <div className="navbar-start" data-aos="fade-down">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -29,7 +29,7 @@ const Navbar = () => {
                     </div>
                     <Link to='/' className="w-40"><img src="/src/assets/Inline-logo.png" alt="" /></Link>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden lg:flex" data-aos="fade-down">
                     <ul className="menu menu-horizontal px-1">
                         {navLink}
                     </ul>
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <div className="navbar-end">
 
                     {
-                        user ? <div className="dropdown dropdown-end">
+                        user ? <div className="dropdown dropdown-end" data-aos="fade-down">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
                                     <img src={user.photoURL} />
@@ -55,7 +55,7 @@ const Navbar = () => {
                         </div>
                             :
                             <Link to='/login'>
-                                <button className="btn btn-sm  btn-ghost">Login</button>
+                                <button className="btn btn-sm  btn-ghost" data-aos="fade-down">Login</button>
                             </Link>
                     }
                 </div>

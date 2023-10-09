@@ -11,8 +11,9 @@ const AboutUs = () => {
                 <div>
                     <img className="" src={'https://i.ibb.co/n7r1CwQ/mimi-thian-vd-XMSi-X-n6-M-unsplash.jpg'} alt="" />
                 </div>
-                <div className="flex items-center">
-                    <p className="px-6">
+                <div>
+                    <h1 className="text-center my-4 text-3xl font-bold">Our Mission</h1>
+                    <p className="px-6 text-justify">
                         At PixelScape, we are passionate about bringing the world of gaming to life through unforgettable events. With years of experience in game event management, we have become a leading force in the industry, known for our commitment to excellence and dedication to creating exceptional gaming experiences.
                         <br />
                         <br />
@@ -27,12 +28,15 @@ const AboutUs = () => {
                     <img src={'https://i.ibb.co/Wy27fTz/jed-villejo-b-Ec-C0ny-Ip2g-unsplash.jpg'} alt="" />
                 </div>
                 <div className="flex items-center order-first">
-                    <p className="px-6">
-                        We take pride in our ability to seamlessly blend the thrill of competition, the creativity of cosplay, and the excitement of community engagement into each event we manage. Whether it's a large-scale esports tournament, a cosplay extravaganza, or an intimate fan gathering, we bring a level of dedication and expertise that ensures every event is a resounding success.
-                        <br />
-                        <br />
-                        At PixelScape, we are more than event managers; we are gaming enthusiasts who share your passion. Our commitment to excellence, attention to detail, and unwavering dedication to the gaming community set us apart as the go-to choice for your next gaming event. Join us in creating gaming experiences that leave a lasting impact and memories to cherish.
-                    </p>
+                    <div>
+                        <h1 className="text-center my-4 text-3xl font-bold">Our Vision</h1>
+                        <p className="px-6 text-justify">
+                            We take pride in our ability to seamlessly blend the thrill of competition, the creativity of cosplay, and the excitement of community engagement into each event we manage. Whether it's a large-scale esports tournament, a cosplay extravaganza, or an intimate fan gathering, we bring a level of dedication and expertise that ensures every event is a resounding success.
+                            <br />
+                            <br />
+                            At PixelScape, we are more than event managers; we are gaming enthusiasts who share your passion. Our commitment to excellence, attention to detail, and unwavering dedication to the gaming community set us apart as the go-to choice for your next gaming event. Join us in creating gaming experiences that leave a lasting impact and memories to cherish.
+                        </p>
+                    </div>
                 </div>
             </div>
             <h1 className="text-center my-10 font-bold text-5xl text-black">Team <span className="text-gray-500">Member</span></h1>

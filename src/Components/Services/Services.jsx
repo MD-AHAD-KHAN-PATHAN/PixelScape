@@ -6,7 +6,7 @@ const Services = ({ service }) => {
 
     return (
 
-        <div>
+        <div data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             
             <div className="card bg-gray-500 text-white">
                 <figure><img className="w-full" src={picture} alt="picture" /></figure>

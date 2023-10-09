@@ -4,8 +4,8 @@ const Terms = () => {
     return (
         <div className="min-h-screen m-20">
             <h1 className="text-center text-5xl font-bold text-black mb-20"><span className="text-gray-500">PixelScape</span> Event</h1>
-            <div className="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" checked="checked" />
+            <div className="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2"/>
                 <div className="collapse-title text-xl font-medium">
                     Acceptance of Terms
                 </div>
@@ -13,8 +13,8 @@ const Terms = () => {
                     <p>By using the services provided by [Your Company Name] (referred to as "we," "us," or "the Company"), you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please refrain from using our services.</p>
                 </div>
             </div>
-            <div className="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" />
+            <div className="collapse collapse-arrow bg-base-200 my-4">
+                <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-xl font-medium">
                     Event Booking
                 </div>
@@ -24,8 +24,8 @@ const Terms = () => {
                     <p><span className="font-bold">2.2. Payment:</span> Payment terms and schedules will be outlined in the event contract. Failure to make payments as specified may result in the cancellation of the event.</p>
                 </div>
             </div>
-            <div className="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" />
+            <div className="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-xl font-medium">
                     Cancellation and Refunds
                 </div>
@@ -35,8 +35,8 @@ const Terms = () => {
                     <p><span className="font-bold">3.2. Cancellation by the Company:</span>  In rare circumstances, we may need to cancel or reschedule an event due to unforeseen circumstances. In such cases, we will make every effort to provide a suitable alternative or issue a refund.</p>
                 </div>
             </div>
-            <div className="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" />
+            <div className="collapse collapse-arrow bg-base-200 my-4">
+                <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-xl font-medium">
                     Event Changes
                 </div>
@@ -46,8 +46,8 @@ const Terms = () => {
                     <p><span className="font-bold">4.2. Service Changes:</span>We reserve the right to make changes to event details, including venues, activities, or other elements, if necessary, and will notify you promptly.</p>
                 </div>
             </div>
-            <div className="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" />
+            <div className="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-xl font-medium">
                     Participant Behavior
                 </div>
@@ -55,8 +55,8 @@ const Terms = () => {
                     <p><span className="font-bold">5.1. Conduct: </span> All participants are expected to conduct themselves in a respectful and appropriate manner during events. We reserve the right to remove any individual from an event if their behavior is disruptive, dangerous, or violates our code of conduct.</p>
                 </div>
             </div>
-            <div className="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" />
+            <div className="collapse collapse-arrow bg-base-200 my-4">
+                <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-xl font-medium">
                     Liability and Insurance
                 </div>
@@ -66,8 +66,8 @@ const Terms = () => {
                     <p><span className="font-bold">6.2. Insurance: </span>We recommend that participants have appropriate personal insurance coverage for injuries or accidents that may occur during an event.</p>
                 </div>
             </div>
-            <div className="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" />
+            <div className="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-xl font-medium">
                     Privacy
                 </div>
@@ -75,8 +75,8 @@ const Terms = () => {
                     <p><span className="font-bold">7.1. Data Collection: </span>We may collect and use personal information in accordance with our Privacy Policy.</p>
                 </div>
             </div>
-            <div className="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" />
+            <div className="collapse collapse-arrow bg-base-200 my-4">
+                <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-xl font-medium">
                     Intellectual Property
                 </div>
@@ -84,8 +84,8 @@ const Terms = () => {
                     <p><span className="font-bold">8.1. Ownership: </span>All intellectual property, including event content, logos, and materials, are the property of PixelScape and may not be used or reproduced without our permission.</p>
                 </div>
             </div>
-            <div className="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" />
+            <div className="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-xl font-medium">
                     Dispute Resolution
                 </div>
@@ -94,8 +94,8 @@ const Terms = () => {
                     <p><span className="font-bold">9.2. Arbitration: </span>Any disputes arising from or relating to these Terms and Conditions will be resolved through arbitration in accordance with the rules of the PixelScape, and the decision of the arbitrator will be final.</p>
                 </div>
             </div>
-            <div className="collapse bg-base-200">
-                <input type="radio" name="my-accordion-1" />
+            <div className="collapse collapse-arrow bg-base-200 mt-4">
+                <input type="radio" name="my-accordion-2" />
                 <div className="collapse-title text-xl font-medium">
                     Changes to Terms and Conditions
                 </div>
