@@ -1,8 +1,8 @@
+import { ToastContainer, toast } from "react-toastify";
 
 const Details = ({ item }) => {
 
     const { picture, title, details, price } = item;
-
 
     const handleClick = () => {
 
@@ -10,13 +10,16 @@ const Details = ({ item }) => {
 
         const data = JSON.parse(localStorage.getItem('service'));
 
-        if(!data) {
+        if (!data) {
             donationsArray.push(item);
             localStorage.setItem('service', JSON.stringify(donationsArray));
+            toast.success('Your service added successfully');
         }
         else {
+
             donationsArray.push(...data, item);
             localStorage.setItem('service', JSON.stringify(donationsArray));
+            toast.success('Your service added successfully');
         }
     }
 
@@ -33,16 +36,15 @@ const Details = ({ item }) => {
                         <input type="radio" name="rating-1" className="mask mask-star" />
                         <input type="radio" name="rating-1" className="mask mask-star" />
                         <input type="radio" name="rating-1" className="mask mask-star" />
-                        <input type="radio" name="rating-1" className="mask mask-star" checked />
+                        <input type="radio" name="rating-1" className="mask mask-star" />
                         <input type="radio" name="rating-1" className="mask mask-star" />
                     </div>
                     <div className="flex justify-between">
                         <div><button className="px-4 py-2 font-bold bg-slate-400 rounded-lg">$ {price}</button></div>
-                        <div><button onClick={( )=> handleClick()} className="px-4 py-2 font-semibold bg-slate-400 rounded-lg">Book Now</button></div>
-                        
+                        <div><button onClick={() => handleClick()} className="px-4 py-2 font-semibold bg-slate-400 rounded-lg">Book Now</button></div>
                     </div>
 
-
+                    <ToastContainer></ToastContainer>
                 </div>
             </div>
         </div>

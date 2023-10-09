@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/ph9jrht/ella-don-k-CFXVis-Uqug-unsplash.jpg",
+      "venue_name": "Pixel Paradise Arcade",
+      "description": "Pixel Paradise Arcade is a retro-themed gaming venue that takes you back to the golden age of arcade gaming. It boasts a wide range of vintage arcade cabinets, pinball machines, and classic console setups. With neon lights and nostalgic décor, it's a haven for gamers seeking a dose of nostalgia.",
+      "address": "123 Main Street, Cityville, Stateville, 12345",
+      "price": 5000
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/z2q0xc0/francesco-ungaro-Vz7-G4-Ptme-Ho-unsplash.jpg",
+      "venue_name": "Virtual Vanguard eSports Arena",
+      "description": "Virtual Vanguard is a cutting-edge eSports arena equipped with the latest gaming technology. It hosts regular eSports tournaments for various popular titles, including League of Legends, Overwatch, and Fortnite. The arena also features a VR gaming section for a fully immersive experience.",
+      "address": "456 Park Avenue, Townsville, Stateville, 56789",
+      "price": 4000
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/VV6ckFw/susan-g-komen-3-day-qf-WMUXDc-N18-unsplash.jpg",
+      "venue_name": "Game Galaxy VR Lounge",
+      "description": "Game Galaxy VR Lounge specializes in virtual reality gaming. It offers a wide selection of VR games and experiences, from action-packed shooters to mind-bending puzzles. The lounge provides top-of-the-line VR headsets and spacious play areas for an unparalleled VR adventure.",
+      "address": "789 Ocean Drive, Beachtown, Stateville, 98765",
+      "price": 3000
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/rd8BQCR/flipsnack-beg6r-FNp-DKM-unsplash.jpg",
+      "venue_name": "Fantasy Quest Board Game Café",
+      "description": "Fantasy Quest is a cozy board game café that welcomes tabletop enthusiasts. It houses an extensive collection of board games, card games, and role-playing games. Patrons can enjoy delicious snacks and beverages while engaging in epic board game battles.",
+      "address": "101 Brick Lane, Artisancity, Stateville, 54321",
+      "price": 4500
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/vYt6bpZ/pablo-heimplatz-ZODc-Bk-Eohk8-unsplash.jpg",
+      "venue_name": "Retro Rewind LAN Center",
+      "description": "Retro Rewind LAN Center is a dedicated space for PC gaming. It features rows of high-end gaming PCs with a variety of games, including multiplayer shooters, MOBAs, and real-time strategy titles. It's a social hub for gamers who enjoy playing together in a LAN party atmosphere.",
+      "address": "222 Jazz Street, Melodyville, Stateville, 13579",
+      "price": 3500
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/7yN3L75/sebastian-pandelache-Frwsc-UWny-P0-unsplash.jpg",
+      "venue_name": "PixelPlay Zone",
+      "description": "PixelPlay Zone is a retro-inspired gaming hub featuring a mix of classic and modern games. With its 80s arcade aesthetics and neon décor, it's a nostalgic paradise for gamers of all ages. From Pac-Man to the latest console releases, this venue offers a gaming experience that's as timeless as it is entertaining.",
+      "address": "333 Tranquil Lane, Gardenia, Stateville, 24680",
+      "price": 5000
+    }
+  ]
+  

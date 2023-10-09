@@ -4,14 +4,20 @@ import UseHooks from "../Hooks/UseHooks";
 
 const Navbar = () => {
 
-    const {user, logOut} = UseHooks();
+    const { user, logOut } = UseHooks();
+
+
+
 
     const navLink = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/aboutUs'>About Us</NavLink></li>
         <li><NavLink to='/terms'>Terms & Condition</NavLink></li>
         {
-            user && <li><NavLink to='/customService'>custom service</NavLink></li>
+            user && <>
+                <li><NavLink to='/venue'>Venu</NavLink></li>
+                <li><NavLink to='/customService'>Custom Service</NavLink></li>
+            </>
         }
     </>
 

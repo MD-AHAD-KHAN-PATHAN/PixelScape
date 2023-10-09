@@ -9,6 +9,7 @@ import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import CustomService from "../Pages/CustomService/CustomService";
 import Terms from "../Pages/Terms&Condition/Terms";
+import Venue from "../Pages/Venue/Venue";
 
 const Route = createBrowserRouter([
     {
@@ -45,6 +46,11 @@ const Route = createBrowserRouter([
             {
                 path: '/customService',
                 element: <CustomService></CustomService>
+            },
+            {
+                path: '/venue',
+                element: <PrivateRoute><Venue></Venue></PrivateRoute>,
+                loader: () => fetch('/venu.json')
             }
         ]
     }

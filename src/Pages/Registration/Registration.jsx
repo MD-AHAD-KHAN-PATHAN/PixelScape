@@ -39,10 +39,10 @@ const Registration = () => {
 
     return (
         <>
-            <div className="min-h-screen bg-base-200">
-                <div className="hero-content flex lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Please Registration !</h1>
+            <div className="min-h-screen md:bg-base-200 md:my-0 my-10">
+                <div className="md:hero-content md:flex md:flex-row-reverse md:mx-0 mx-6">
+                    <div className="text-center md:text-left">
+                        <h1 className="md:text-5xl text-3xl font-bold md:mb-0 mb-6">Please Registration !</h1>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">

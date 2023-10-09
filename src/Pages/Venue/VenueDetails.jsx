@@ -1,18 +1,19 @@
 
-const CustomData = ({card}) => {
 
+const VenueDetails = ({item}) => {
 
-    const {picture, title, description, price} = card || {};
+    const {image, venue_name, description, address, price} = item;
 
     return (
-        <div className="">
-           <div className=" bg-gray-500 text-white">
+
+        <div className=" bg-gray-500 text-white">
                 <div >
-                    <img className="" src={picture} alt="" />
+                    <img className="" src={image} alt="" />
                 </div>
                 <div className="p-6">
-                    <p className="text-xl font-bold">{title}</p>
-                    <p className="text-sm text-justify my-2">{description}</p>
+                    <p className="text-xl font-bold">{venue_name}</p>
+                    <p className="text-md text-justify my-2">{description}</p>
+                    <p className="text-md my-4 font-bold">{address}</p>
                     <div className="rating mb-4">
                         <input type="radio" name="rating-1" className="mask mask-star" />
                         <input type="radio" name="rating-1" className="mask mask-star" />
@@ -27,8 +28,8 @@ const CustomData = ({card}) => {
 
                 </div>
             </div>
-        </div>
+
     );
 };
 
-export default CustomData;
+export default VenueDetails;

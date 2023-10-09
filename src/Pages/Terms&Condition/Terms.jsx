@@ -2,8 +2,8 @@
 const Terms = () => {
 
     return (
-        <div className="min-h-screen m-20">
-            <h1 className="text-center text-5xl font-bold text-black mb-20"><span className="text-gray-500">PixelScape</span> Event</h1>
+        <div className="min-h-screen md:m-20 m-6">
+            <h1 className="text-center lg:text-5xl text-3xl font-bold text-black md:mb-20 my-6"><span className="text-gray-500">PixelScape</span> Event</h1>
             <div className="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2"/>
                 <div className="collapse-title text-xl font-medium">
