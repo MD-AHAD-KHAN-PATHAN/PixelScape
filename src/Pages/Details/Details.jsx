@@ -3,6 +3,23 @@ const Details = ({ item }) => {
 
     const { picture, title, details, price } = item;
 
+
+    const handleClick = () => {
+
+        const donationsArray = [];
+
+        const data = JSON.parse(localStorage.getItem('service'));
+
+        if(!data) {
+            donationsArray.push(item);
+            localStorage.setItem('service', JSON.stringify(donationsArray));
+        }
+        else {
+            donationsArray.push(...data, item);
+            localStorage.setItem('service', JSON.stringify(donationsArray));
+        }
+    }
+
     return (
         <div className="min-h-screen flex items-center">
             <div className="w-3/4 grid grid-cols-2 mx-auto bg-gray-500 text-white">
@@ -21,7 +38,7 @@ const Details = ({ item }) => {
                     </div>
                     <div className="flex justify-between">
                         <div><button className="px-4 py-2 font-bold bg-slate-400 rounded-lg">$ {price}</button></div>
-                        <div><button className="px-4 py-2 font-semibold bg-slate-400 rounded-lg">Book Now</button></div>
+                        <div><button onClick={( )=> handleClick()} className="px-4 py-2 font-semibold bg-slate-400 rounded-lg">Book Now</button></div>
                         
                     </div>
 
