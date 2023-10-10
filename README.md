@@ -2,7 +2,7 @@
 
 ## [ Private Repo Link](https://classroom.github.com/a/ehOGNGkI)
 
-## [ Live Link ] (https://zesty-pastelito-e3cb3b.netlify.app/)
+## [ Live Link ](https://zesty-pastelito-e3cb3b.netlify.app/)
 
 Click here for the live project link : [https://zesty-pastelito-e3cb3b.netlify.app/]
 
