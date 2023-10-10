@@ -6,7 +6,7 @@ const UpcomingEvent = () => {
 
     return (
         <div className="min-h-screen md:my-20 my-6">
-            <div className="lg:w-3/4 grid lg:grid-cols-2 lg:mx-auto mx-6 bg-gray-500 text-white mb-6">
+            <div data-aos="flip-up" data-aos-duration="1000" className="lg:w-3/4 grid lg:grid-cols-2 lg:mx-auto mx-6 bg-gray-500 text-white mb-6">
                 <div >
                     <img className="" src="https://i.ibb.co/ph9jrht/ella-don-k-CFXVis-Uqug-unsplash.jpg" alt="" />
                 </div>
@@ -26,7 +26,7 @@ const UpcomingEvent = () => {
                     </div>
                 </div>
             </div>
-            <div className="lg:w-3/4 grid lg:grid-cols-2 lg:mx-auto mx-6 bg-gray-500 text-white">
+            <div data-aos="flip-up" data-aos-duration="1000" className="lg:w-3/4 grid lg:grid-cols-2 lg:mx-auto mx-6 bg-gray-500 text-white">
                 <div >
                     <img className="" src="https://i.ibb.co/z2q0xc0/francesco-ungaro-Vz7-G4-Ptme-Ho-unsplash.jpg" alt="" />
                 </div>

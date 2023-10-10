@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import UseHooks from '../../Components/Hooks/UseHooks';
 import { ToastContainer, toast } from 'react-toastify';
@@ -7,11 +7,13 @@ import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
 
     const { userLogin } = UseHooks();
-
     const navigate = useNavigate();
+    const location = useLocation();
+
+
 
     function slow(){
-        navigate('/');
+        navigate(location?.state ? location.state : '/');
     }
 
     const handleLogin = e => {
@@ -23,7 +25,7 @@ const Login = () => {
         userLogin(email, password)
             .then(() => {
                 toast.success('User login Successfull');
-                setTimeout(slow, 1000);
+                setTimeout(slow, 2000);
             })
             .catch((error) => {
                 toast.error(error.code);
@@ -31,16 +33,16 @@ const Login = () => {
 
     }
 
-
+    
 
     return (
         <>
             <div className=" min-h-screen w-full justify-center md:bg-base-200 md:my-0 my-10">
                 <div className="md:hero-content md:flex md:flex-row-reverse md:mx-0 mx-6">
-                    <div className="text-center">
+                    <div className="text-center" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                         <h1 className="md:text-5xl text-3xl font-bold md:mb-0 mb-6">Please Login !</h1>
                     </div>
-                    <div className="card flex-shrink-0 w-full md:max-w-sm shadow-2xl bg-base-100">
+                    <div className="card flex-shrink-0 w-full md:max-w-sm shadow-2xl bg-base-100" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <div className="card-body">
                             <form onSubmit={handleLogin}>
                                 <div className="form-control">

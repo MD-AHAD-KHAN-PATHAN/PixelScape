@@ -5,7 +5,7 @@ const CustomData = ({card}) => {
     const {picture, title, description, price} = card || {};
 
     return (
-        <div className="">
+        <div className="" data-aos="fade-up" data-aos-duration="1000">
            <div className=" bg-gray-500 text-white">
                 <div >
                     <img className="" src={picture} alt="" />

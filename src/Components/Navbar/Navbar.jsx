@@ -34,7 +34,7 @@ const Navbar = () => {
                             {navLink}
                         </ul>
                     </div>
-                    <Link to='/' className="w-40"><img src="/src/assets/Inline-logo.png" alt="" /></Link>
+                    <Link to='/' className="w-40"><img src="https://i.ibb.co/Gcrm54h/Inline-logo.png" alt="" /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex" data-aos="fade-down">
                     <ul className="menu menu-horizontal px-1">

@@ -1,8 +1,11 @@
+import { useLocation } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
 const Details = ({ item }) => {
 
     const { picture, title, details, price } = item;
+
+    const location = useLocation();
 
     const handleClick = () => {
 
@@ -25,11 +28,11 @@ const Details = ({ item }) => {
 
     return (
         <div className="min-h-screen flex items-center">
-            <div className="w-3/4 grid grid-cols-2 mx-auto bg-gray-500 text-white">
+            <div data-aos="fade-right" className="w-3/4 grid lg:grid-cols-2 mx-auto lg:my-0 md:my-20 my-12 bg-gray-500 text-white">
                 <div >
                     <img className="" src={picture} alt="" />
                 </div>
-                <div className="p-6">
+                <div className="p-4">
                     <p className="text-xl font-bold">{title}</p>
                     <p className="text-sm text-justify my-2">{details}</p>
                     <div className="rating mb-4">

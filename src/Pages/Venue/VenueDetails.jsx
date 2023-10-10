@@ -6,7 +6,7 @@ const VenueDetails = ({item}) => {
 
     return (
 
-        <div className=" bg-gray-500 text-white">
+        <div data-aos="zoom-in-up" className=" bg-gray-500 text-white">
                 <div >
                     <img className="" src={image} alt="" />
                 </div>
