@@ -1,12 +1,12 @@
 # PixelScape Production
 
-## [ Private Repo Link](https://classroom.github.com/a/ehOGNGkI)
+## [ Private Repo Link](https://github.com/MD-AHAD-KHAN-PATHAN/PixelScape)
 
-## [ Live Link ](https://zesty-pastelito-e3cb3b.netlify.app/)
+## [ Live Link ](https://majestic-froyo-0a3440.netlify.app/)
 
-Click here for the live project link : [https://zesty-pastelito-e3cb3b.netlify.app/]
+Click here for the live project link : [https://majestic-froyo-0a3440.netlify.app/]
 
-Click here for the private repo: [https://classroom.github.com/a/ehOGNGkI](https://classroom.github.com/a/ehOGNGkI)
+Click here for the private repo: [https://github.com/MD-AHAD-KHAN-PATHAN/PixelScape]
 
 # Five Features List in my Website
 
